@@ -6,7 +6,8 @@ const TodoContext = createContext({
     handleCreateNewTodo: () => {},
     handleTodoInput: () => {},
     handleCompletedTodo: () => {},
-    handleDeleteTodo: () => {}
+    handleDeleteTodo: () => {},
+    
 });
 
 export default TodoContext;

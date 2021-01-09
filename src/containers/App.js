@@ -11,6 +11,7 @@ const App = () => {
     const [getTodos, setTodos] = useState([]);
     const [getTodo, setTodo] = useState("");
 
+
     const handleCreateNewTodo = () => {
         const todos = [...getTodos];
         const todo = {
@@ -73,16 +74,22 @@ const App = () => {
         >
 
             <div className="d-flex justify-content-center container">
+
                 <div className="col-md-8">
                     <div className="card-hover-shadow-2x mb-3 card">
                         <Todos />
+
                     </div>
                 </div>
+
             </div>
+
+
             <AddNewTask />
             <ToastContainer />
 
         </TodoContext.Provider>
+
     );
 };
 
